@@ -1,38 +1,62 @@
-// Function to store form data in localStorage
+// store form data in localStorage
 document.getElementById('saveTransaction').addEventListener('click', function() {
-    // Get the values from the dropdown and input field
-    const transactionType = document.getElementById('transactionType').value;
-    const amount = document.getElementById('amount').value;
-    
-    if (amount && transactionType) {
-      // Prepare data to store
+  const transactionType = document.getElementById('transactionType').value;
+  const amount = document.getElementById('amount').value;
+  
+  if (amount && transactionType) {
       const transaction = {
-        type: transactionType,
-        amount: parseFloat(amount)
+          type: transactionType,
+          amount: parseFloat(amount)
       };
-      
-      // Get existing transactions from localStorage or initialize empty array
+
       let transactions = JSON.parse(localStorage.getItem('transactions')) || [];
-      
-      // Add new transaction to the array
       transactions.push(transaction);
-      
-      // Store updated transactions back to localStorage
       localStorage.setItem('transactions', JSON.stringify(transactions));
       
-      alert('Transaction saved!');
-      
-      // Optionally, clear form inputs after saving
-      document.getElementById('transactionType').value = 'income';
+      document.getElementById('transactionType').value = ''; 
       document.getElementById('amount').value = '';
-    } else {
+      
+      displayTransactions();
+  } else {
       alert('Please fill in all fields');
-    }
-  });
+  }
+});
+
+// Working on showing the total amount and storing it in localStorage
+function getTotal() {
+  const transactions = JSON.parse(localStorage.getItem('transactions')) || [];
+  let total = 0;
   
-  // Example of retrieving and displaying the stored data
-  document.addEventListener('DOMContentLoaded', function() {
-    const transactionsEl = JSON.parse(localStorage.getItem('transactions')) || [];
-    console.log('Stored transactions:', transactionsEl);
+  transactions.forEach(transaction => {
+    total += transaction.amount;
+    Document.getElementById('total').value = total.toFixed(2);
   });
+  return total.toFixed(2);
+}
+
+// display stored transactions in the table
+function displayTransactions() {
+  const transactionsTableBody = document.getElementById('transactionsTableBody');
+  transactionsTableBody.innerHTML = '';
+
+  const transactions = JSON.parse(localStorage.getItem('transactions')) || [];
   
+  transactions.forEach(transaction => {
+      const row = document.createElement('tr');
+      
+      const typeCell = document.createElement('td');
+      typeCell.textContent = transaction.type;
+      row.appendChild(typeCell);
+      
+      const amountCell = document.createElement('td');
+      amountCell.textContent = transaction.amount.toFixed(2);
+      row.appendChild(amountCell);
+      
+      transactionsTableBody.appendChild(row);
+  });
+}
+
+// displaying the stored data
+document.addEventListener('DOMContentLoaded', function() {
+  displayTransactions(); 
+});
