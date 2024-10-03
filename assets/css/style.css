@@ -1,4 +1,10 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     color: #777;
@@ -33,6 +39,7 @@ This is the parent `<div>` that contains the menu and the content area.
     left: 0;
     padding-left: 0;
 }
+
 #layout.active #menu {
     left: 150px;
     width: 150px;
@@ -41,6 +48,7 @@ This is the parent `<div>` that contains the menu and the content area.
 #layout.active .menu-link {
     left: 150px;
 }
+
 /*
 The content `<div>` is where all your content goes.
 */
@@ -53,18 +61,20 @@ The content `<div>` is where all your content goes.
 }
 
 .header {
-     margin: 0;
-     color: #333;
-     text-align: center;
-     padding: 2.5em 2em 0;
-     border-bottom: 4px solid #504c4c;
- }
+    margin: 0;
+    color: #333;
+    text-align: center;
+    padding: 2.5em 2em 0;
+    border-bottom: 4px solid #504c4c;
+}
+
 .header h1 {
     margin: 0.2em 0;
     font-size: 3em;
     font-weight: 300;
 }
- .header h2 {
+
+.header h2 {
     font-weight: 300;
     color: #ccc;
     padding: 0;
@@ -76,15 +86,18 @@ The content `<div>` is where all your content goes.
     font-weight: 300;
     color: #888;
 }
+
 .logo {
     height: 120px;
-    width: 120px; /* Or adjust as needed */
-  }
+    width: 120px;
+    /* Or adjust as needed */
+}
 
 .logo2 {
     height: 40px;
-    width: 40px; /* Or adjust as needed */
-  }
+    width: 40px;
+    /* Or adjust as needed */
+}
 
 
 
@@ -93,10 +106,6 @@ The `#menu` `<div>` is the parent `<div>` that contains the `.pure-menu` that
 appears on the left side of the page.
 */
 
-.i {
-
-    border-top: ;
-}
 .container {
     width: 600px;
     margin: 50px auto;
@@ -115,7 +124,7 @@ appears on the left side of the page.
 .wallet {
     margin: 0;
     font-size: 40px;
-    color:rgb(255, 0, 119);
+    color: rgb(255, 0, 119);
     border-style: solid;
     border-radius: 10px;
     padding-bottom: 1px;
@@ -148,11 +157,14 @@ table {
     margin-top: 20px;
 }
 
-table, th, td {
+table,
+th,
+td {
     border: 1px solid #ccc;
 }
 
-th, td {
+th,
+td {
     padding: 10px;
     text-align: left;
 }
@@ -163,6 +175,68 @@ th {
 
 .right-align {
     text-align: right;
+}
+
+footer {
+    background-color: #0a57c3;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-services {
+    display: flex;
+    justify-content: space-between;
+    width: 80%; 
+    margin-bottom: 20px;
+}
+
+.footer-services p {
+    margin: 0;
+}
+
+.footer-services p a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-services p a:hover {
+    text-decoration: underline;
+}
 
 
+.footer-bottom {
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 10px 0;
+}
+
+.footer-links {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 10px; 
+}
+
+.footer-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links li a:hover {
+    text-decoration: underline;
 }
