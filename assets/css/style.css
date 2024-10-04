@@ -48,21 +48,21 @@ The content `<div>` is where all your content goes.
 }
 
 .header {
-    margin: 0;
-    color: #333;
-    text-align: center;
-    padding: 2.5em 2em 0;
-    border-bottom: 4px solid #504c4c;
-}
-
+     margin: 0;
+     color: #333;
+     text-align: center;
+     padding: 2.5em 2em 0;
+     border-bottom: 4px solid #504c4c;
+     padding-top: 20px;
+ }
 .header h1 {
     margin: 0.2em 0;
     font-size: 3em;
     font-weight: 300;
+    padding-top: 20px;
 }
-
-.header h2 {
-    font-weight: 300;
+ .header h2 {
+    font-weight: 200;
     color: #ccc;
     padding: 0;
     margin-top: 0;
@@ -70,15 +70,13 @@ The content `<div>` is where all your content goes.
 
 .logo {
     height: 120px;
-    width: 120px;
-    /* Or adjust as needed */
-}
+    width: 120px; /* Or adjust as needed */
+  }
 
 .logo2 {
     height: 40px;
-    width: 40px;
-    /* Or adjust as needed */
-}
+    width: 40px; /* Or adjust as needed */
+  }
 
 
 
@@ -86,6 +84,7 @@ The content `<div>` is where all your content goes.
 The `#menu` `<div>` is the parent `<div>` that contains the `.pure-menu` that
 appears on the left side of the page.
 */
+
 #menu {
     margin-left: -150px; /* "#menu" width */
     width: 150px;
@@ -105,110 +104,6 @@ appears on the left side of the page.
         border: none;
         padding: 0.6em 0 0.6em 0.6em;
     }
-
-    /*
-    Remove all background/borders, since we are applying them to #menu.
-    */
-     #menu .pure-menu,
-     #menu .pure-menu ul {
-        border: none;
-        background: transparent;
-    }
-
-    /*
-    Add that light border to separate items into groups.
-    */
-    #menu .pure-menu ul,
-    #menu .pure-menu .menu-item-divided {
-        border-top: 1px solid #333;
-    }
-        /*
-        Change color of the anchor links on hover/focus.
-        */
-        #menu .pure-menu li a:hover,
-        #menu .pure-menu li a:focus {
-            background: #333;
-        }
-
-    /*
-    This styles the selected menu item `<li>`.
-    */
-    #menu .pure-menu-selected,
-    #menu .pure-menu-heading {
-        background: #1f8dd6;
-    }
-        /*
-        This styles a link within a selected menu item `<li>`.
-        */
-        #menu .pure-menu-selected a {
-            color: #fff;
-        }
-
-    /*
-    This styles the menu heading.
-    */
-    #menu .pure-menu-heading {
-        font-size: 110%;
-        color: #fff;
-        margin: 0;
-    }
-
-/* -- Dynamic Button For Responsive Menu -------------------------------------*/
-
-/*
-The button to open/close the Menu is custom-made and not part of Pure. Here's
-how it works:
-*/
-
-/*
-`.menu-link` represents the responsive menu toggle that shows/hides on
-small screens.
-*/
-.menu-link {
-    position: fixed;
-    display: block; /* show this only on small screens */
-    top: 0;
-    left: 0; /* "#menu width" */
-    background: #000;
-    background: rgba(0,0,0,0.7);
-    font-size: 10px; /* change this value to increase/decrease button size */
-    z-index: 10;
-    width: 2em;
-    height: auto;
-    padding: 2.1em 1.6em;
-}
-
-    .menu-link:hover,
-    .menu-link:focus {
-        background: #000;
-    }
-
-    .menu-link span {
-        position: relative;
-        display: block;
-    }
-
-    .menu-link span,
-    .menu-link span:before,
-    .menu-link span:after {
-        background-color: #fff;
-        pointer-events: none;
-        width: 100%;
-        height: 0.2em;
-    }
-
-        .menu-link span:before,
-        .menu-link span:after {
-            position: absolute;
-            margin-top: -0.6em;
-            content: " ";
-        }
-
-        .menu-link span:after {
-            margin-top: 0.6em;
-        }
-
-
 /* -- Responsive Styles (Media Queries) ------------------------------------- */
 
 /*
@@ -269,12 +164,28 @@ h1 {
     padding-left: 10px;
 }
 
-.right-align {
-    text-align: right;
+.button {
+    text-align: left;
+    padding-left: 10px;
 }
 
-footer {
-    background-color: #0a57c3;
+table.table {
+    width: 20%; 
+    margin: 0 auto; 
+    border: 1px solid #ccc; 
+}
+  
+table.table th, table.table td {
+    padding: 8px; 
+    border-right: 1px solid #ccc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}                                                                                                                                                                           footer {
+    background-color: rgb(30, 29, 29);
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -288,63 +199,40 @@ footer {
     align-items: center;
     justify-content: center;
 }
-
 .footer-services {
     display: flex;
     justify-content: space-between;
-    width: 80%; 
+    width: 80%;
     margin-bottom: 20px;
 }
-
 .footer-services p {
     margin: 0;
 }
 
-.footer-services p a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.footer-services p a:hover {
-    text-decoration: underline;
-}
-
-
 .footer-bottom {
     text-align: center;
 }
-
 .footer-bottom p {
     margin: 10px 0;
 }
-
 .footer-links {
     list-style-type: none;
     display: flex;
     gap: 15px;
     justify-content: center;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
-
 .footer-links li a {
     color: #fff;
     text-decoration: none;
     font-size: 14px;
 }
-
 .footer-links li a:hover {
     text-decoration: underline;
 }
 
-table.table {
-    width: 20%; 
-    margin: 0 auto; 
-    border: 1px solid #ccc; 
-}
-  
-table.table th, table.table td {
-    padding: 8px; 
-    border-right: 1px solid #ccc;
+p {
+    display: inline;
+    margin-right: 15px;
 }
 
