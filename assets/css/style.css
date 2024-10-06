@@ -1,48 +1,66 @@
-body {
-    color: #777;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/*
-The content `<div>` is where all your content goes.
-*/
-.content {
-    margin: 0 auto;
-    padding: 0 2em;
-    max-width: 800px;
+body {
+    color: #777;
+    /* margin: 0 auto;
+    padding: 0 2em; */
+    /* max-width: 800px; */
     margin-bottom: 50px;
     line-height: 1.6em;
+    font-family: 'Tahoma', sans-serif;
+    font-size: 22px;
 }
 
 .header {
-     margin: 0;
-     color: #333;
-     text-align: center;
-     padding: 2.5em 2em 0;
-     border-bottom: 4px solid #504c4c;
-     padding-top: 20px;
- }
+    margin: 0;
+    color: #333;
+    text-align: center;
+    padding: 2.5em 2em 0;
+    border-bottom: 4px solid #504c4c;
+    padding-top: 20px;
+}
+
 .header h1 {
     margin: 0.2em 0;
     font-size: 3em;
     font-weight: 300;
     padding-top: 20px;
 }
- .header h2 {
+
+.header h2 {
     font-weight: 200;
     color: #ccc;
     padding: 0;
     margin-top: 0;
 }
 
+p {
+    display: inline;
+    margin-right: 15px;
+    font-size: small;
+    line-height: 80%;
+}
+
 .logo {
     height: 120px;
-    width: 120px; /* Or adjust as needed */
-  }
+    width: 120px;
+    /* Or adjust as needed */
+}
 
 .logo2 {
     height: 40px;
-    width: 40px; /* Or adjust as needed */
-  }
+    width: 40px;
+    /* Or adjust as needed */
+}
+
+#add-expense {
+    background-color: black;
+    border-color: grey;
+}
 
 h2 {
     font-size: 1.5em;
@@ -51,6 +69,7 @@ h2 {
     text-align: center;
     padding-left: 10px;
 }
+
 h1 {
     font-size: 2em;
     font-weight: 300;
@@ -58,6 +77,15 @@ h1 {
     text-align: center;
     padding-left: 10px;
 }
+
+#saveTransaction {
+    background-color: black;
+}
+/* 
+.blurb {
+    position: static;
+    width: 60%;
+} */
 
 .button {
     text-align: center;
@@ -77,28 +105,27 @@ h1 {
 }
 
 table.table {
-    width: 20%; 
-    margin: 0 auto; 
-    border: 1px solid #ccc; 
+    width: 20%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
 }
-  
-table.table th, table.table td {
-    padding: 8px; 
+
+table.table th,
+table.table td {
+    padding: 8px;
     border-right: 1px solid #ccc;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}                                                                                                                                                                       footer {
+footer {
     background-color: rgb(30, 29, 29);
     color: #fff;
+    position: absolute;
     padding: 20px 0;
     text-align: center;
     position: fixed;
     width: 100%;
     bottom: 0;
+    height: 125px;
 }
 
 .footer-container {
@@ -145,10 +172,7 @@ table.table th, table.table td {
     text-decoration: underline;
 }
 
-p {
-    display: inline;
-    margin-right: 15px;
-}
+
 
 
 
@@ -165,7 +189,30 @@ Hides the menu at `48em`, but modify this based on your app's needs.
     .content {
         padding-left: 2em;
         padding-right: 2em;
-    } */
+    }
+
+    #layout {
+        padding-left: 150px; */
+        /* left col width "#menu" */
+        /* left: 0;
+    }
+
+    #menu {
+        left: 150px;
+    }
+
+    .menu-link {
+        position: fixed;
+        left: 150px;
+        display: none;
+    }
+
+    #layout.active .menu-link {
+        left: 150px;
+    }
+} */
+
+/* @media (max-width: 48em) {
 
     /* Only apply this when the window is small. Otherwise, the following
     case results in extra padding on the left:
@@ -179,5 +226,6 @@ Hides the menu at `48em`, but modify this based on your app's needs.
         left: 150px;
     }
 } */
+
 
 
