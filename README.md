@@ -21,6 +21,8 @@ N/A
 - The data will populate in a table.
 - Add all desired data.
 
+[ADD SCREENSHOT HERE]g
+
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
     ```md
@@ -40,15 +42,3 @@ Nic - https://github.com/k3strl - Worked on HTML/CSS & wrote up the readme
 ### Tools 
 
 Bootstrap - modal, toast
-
-
-## Features
-
-
-
-
-
-
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
