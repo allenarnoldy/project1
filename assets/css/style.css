@@ -92,6 +92,18 @@ h1 {
     padding-left: 10px;
 }
 
+#saveTransaction {
+    background-color: black;
+}
+
+#add-expense {
+    background-color: black;
+    border-color: grey;
+    display: block;
+    margin: 0 auto;
+
+}
+
 table.table {
     width: 20%;
     margin: 0 auto;
@@ -103,7 +115,6 @@ table.table td {
     padding: 8px;
     border-right: 1px solid #ccc;
 }
-
 
 footer {
     background-color: rgb(30, 29, 29);
@@ -209,6 +220,11 @@ Hides the menu at `48em`, but modify this based on your app's needs.
         * Tap the menu to trigger the active state.
         * Make the window large again.
     */
+/* @media (max-width: 48em) {
+    #layout.active {
+        position: relative;
+        left: 150px;
+    }
 } */
 
 
