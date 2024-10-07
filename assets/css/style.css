@@ -105,7 +105,7 @@ p {
 }
 
 #add-expense {
-    background-color: black;
+    background-color: #333;
     border-color: grey;
 }
 
@@ -129,6 +129,10 @@ h1 {
     padding-left: 10px;
 }
 
+h6 {
+    max-width: 60%;
+}
+
 section h6 {
     font-weight: 200;
     color: #777;
@@ -141,8 +145,12 @@ main {
     padding: 1em;
 }
 
+.transactions {
+    padding-top: 1em;
+}
+
 #saveTransaction {
-    background-color: black;
+    background-color: #333;
 }
 
 .button {
@@ -151,11 +159,11 @@ main {
 }
 
 #saveTransaction {
-    background-color: black;
+    background-color: #333;
 }
 
 #add-expense {
-    background-color: black;
+    background-color: #333;
     border-color: grey;
     display: block;
     margin: 0 auto;

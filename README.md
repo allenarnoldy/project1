@@ -10,7 +10,7 @@ This project taught us about how to build a responsive web app using HTML, CSs a
 
 [Deployed on GitHub Pages](https://allenarnoldy.github.io/project1/)
 
-## Usage
+## Usage/Features
 
 - Click on the "Add Expense" button.
 - The "Add Transaction" modal appears. 
@@ -20,22 +20,23 @@ This project taught us about how to build a responsive web app using HTML, CSs a
 - Click "Save Transaction."
 - The data will populate in a table.
 - Add all desired data.
-
-## Screenshot
-
-![screencap](assets\photos\screencap.png)
+- Wallet Watchers will keep a running total of all entered data in the "Total" column.
     
 
 ## Credits
 
-Allen https://github.com/allenarnoldy - Worked on HTML/CSS and JavaScript
+[Allen](https://github.com/allenarnoldy) - Worked on HTML/CSS and JavaScript
 
-Ronnie - https://github.com/RonKen-coder - Worked on HTML/CSS, built the footer, & did the Google presentation
+[Ronnie](https://github.com/RonKen-coder) - Worked on HTML/CSS, built the footer, & did the Google presentation
 
-Rafiu - https://github.com/elele20005 - Worked on HTML/CSS & built the header
+[Rafiu](https://github.com/elele20005) - Worked on HTML/CSS & built the header
 
-Nic - https://github.com/k3strl - Worked on HTML/CSS & wrote up the readme
+[Nic](https://github.com/k3strl) - Worked on HTML/CSS & wrote up the readme
 
 ### Tools 
 
-Bootstrap - modal, toast
+[Bootstrap](https://getbootstrap.com/) - modal, toast
+
+## Screenshot
+
+![screencap](assets\photos\screencap.png)
