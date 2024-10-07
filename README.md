@@ -6,9 +6,9 @@ Wallet Watchers is a simple, lightweight app that allows you to input, track, an
 
 This project taught us about how to build a responsive web app using HTML, CSs and Javascript; how to divide and assign tasks, and how to collaborate using Git and GitHub without overwriting each other's work.
 
-## Installation
+## Links
 
-N/A
+[Deployed on GitHub Pages](https://allenarnoldy.github.io/project1/)
 
 ## Usage
 
@@ -21,13 +21,10 @@ N/A
 - The data will populate in a table.
 - Add all desired data.
 
-[ADD SCREENSHOT HERE]g
+## Screenshot
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+![screencap](assets\photos\screencap.png)
+    
 
 ## Credits
 
