@@ -39,4 +39,4 @@ This project taught us about how to build a responsive web app using HTML, CSs a
 
 ## Screenshot
 
-![screencap](assets\photos\screencap.png)
+![screenshot](assets\photos\screenshot.png)
