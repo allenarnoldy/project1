@@ -137,6 +137,10 @@ section h6 {
     padding-left: 20px;
 }
 
+main {
+    padding: 1em;
+}
+
 #saveTransaction {
     background-color: black;
 }
