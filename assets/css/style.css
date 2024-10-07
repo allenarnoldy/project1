@@ -49,7 +49,7 @@ body {
 /* RAFIU HEADER */
 
 .container {
-    max-width:1600px;
+    min-width: 100%;
     margin-right: 0px;
     margin-left: 0px;
     display: flex;
@@ -59,6 +59,7 @@ body {
     color: #fff;
     padding-bottom: 0 30px;
 }
+
 .login,.signup {
     /* background-color: brown; */
     border-radius: 5px;
