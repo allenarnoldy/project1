@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body {
@@ -45,6 +46,36 @@ body {
     margin-top: 0;
 }
 
+/* RAFIU HEADER */
+
+.container {
+    max-width:1600px;
+    margin-right: 0px;
+    margin-left: 0px;
+    display: flex;
+    align-items : center;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    padding-bottom: 0 30px;
+}
+.login,.signup {
+    /* background-color: brown; */
+    border-radius: 5px;
+}
+.login-signup a {
+    color:white;
+    margin-left: 20px;
+    padding: 4px 10px;
+    font-size: 16px;
+    text-decoration: none;
+}
+.container p {
+    word-spacing: 30px;
+}
+
+/* END OF RAFIU HEADER */
+
 p {
     display: inline;
     margin-right: 15px;
@@ -67,6 +98,10 @@ p {
 #add-expense {
     background-color: black;
     border-color: grey;
+}
+
+a {
+    color: white;
 }
 
 h2 {
