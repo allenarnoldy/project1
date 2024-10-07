@@ -6,9 +6,9 @@ Wallet Watchers is a simple, lightweight app that allows you to input, track, an
 
 This project taught us about how to build a responsive web app using HTML, CSs and Javascript; how to divide and assign tasks, and how to collaborate using Git and GitHub without overwriting each other's work.
 
-## Installation
+## Links
 
-N/A
+[Deployed on GitHub Pages](https://allenarnoldy.github.io/project1/)
 
 ## Usage
 
