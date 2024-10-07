@@ -60,7 +60,7 @@ body {
     padding-bottom: 0 30px;
 }
 .login,.signup {
-    background-color: brown;
+    /* background-color: brown; */
     border-radius: 5px;
 }
 .login-signup a {
